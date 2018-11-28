@@ -1,12 +1,12 @@
 public class Numbers {
   public static void main(String[] args) {
-    // declare an integer variable with a value
+      Integer number = 5;
 
-    // declare a double variable with a value
+      Double decimal = 5.5;
 
-    // store the result of adding the two together in a variable
+      Double result = number + decimal;
 
-    // print it
+      System.out.println(result);
 
-  }
-}
+  };
+};

@@ -1,12 +1,13 @@
 public class Strings {
   public static void main(String[] args) {
-    // declare the first name
+    String ben;
 
-    // declare the second name
+    String reuben;
 
-    // create your message
+    ben = "Ben";
 
-    // print your message!
+    reuben = "Reuben";
 
-  }
-}
+    System.out.println(ben + " > " + reuben);
+  };
+};
