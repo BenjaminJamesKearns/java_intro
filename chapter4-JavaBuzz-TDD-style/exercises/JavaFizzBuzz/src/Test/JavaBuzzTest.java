@@ -3,7 +3,11 @@ import org.junit.*;
 
 public class JavaBuzzTest {
 
-    private JavaBuzz javabuzz = new JavaBuzz();
+    private JavaBuzz javabuzz;
+    @Before
+    public void setUp() {
+        javabuzz = new JavaBuzz();
+    }
     @Test
     public void returnsNumber() {
         String answer = javabuzz.number(1);
