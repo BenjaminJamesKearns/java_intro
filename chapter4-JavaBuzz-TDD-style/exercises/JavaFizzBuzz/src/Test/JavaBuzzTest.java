@@ -1,12 +1,30 @@
 import static org.junit.Assert.*;
-import org.junit.Test;;
+import org.junit.*;
 
 public class JavaBuzzTest {
 
+    @Before
+    public void setUp() {
+        JavaBuzz javabuzz = new JavaBuzz();
+    }
     @Test
     public void returnsNumber() {
-        JavaBuzz javabuzz = new JavaBuzz();
-        int answer = javabuzz.number(1);
-        assertEquals(answer, 1);
+        String answer = javabuzz.number(1);
+        assertEquals(answer, "1");
+    }
+    @Test
+    public void returnsJava() {
+        String answer = javabuzz.number(5);
+        assertEquals(answer, "Buzz");
+    }
+    @Test
+    public void returnsBuzz() {
+        String answer = javabuzz.number(3);
+        assertEquals(answer, "Java");
+    }
+    @Test
+    public void returnsJavaBuzz() {
+        String answer = javabuzz.number(15);
+        assertEquals(answer, "JavaBuzz");
     }
 }
